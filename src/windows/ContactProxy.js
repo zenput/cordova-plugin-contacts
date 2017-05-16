@@ -250,13 +250,9 @@ module.exports = {
                 fail(cancelledError);
                 return;
             }
-            // If we are on desktop, just send em back
-            if (!runningOnPhone) {
-                win(convertToContact(contact));
-                return;
-            }
-            // On WP8.1 fields set in resulted Contact object depends on desiredFieldsWithContactFieldType property of contact picker
-            // so we retrieve full contact by its' Id
+       
+            // always request full contact details
+            // by default, windows 10 APIs do not return fields besides contact name and id (no email, phone, etc)
             contactsNS.ContactManager.requestStoreAsync().done(function (contactStore) {
                 contactStore.getContactAsync(contact.id).done(function(con) {
                     win(convertToContact(con));
