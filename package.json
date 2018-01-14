@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-contacts",
-  "version": "2.3.2-dev",
+  "version": "3.0.2-dev",
   "description": "Cordova Contacts Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
@@ -20,6 +20,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/apache/cordova-plugin-contacts"
+  },
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/CB"
   },
   "keywords": [
     "cordova",
@@ -45,6 +48,9 @@
   "engines": {
     "cordovaDependencies": {
       "3.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "4.0.0": {
         "cordova": ">100"
       }
     }
