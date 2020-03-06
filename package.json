@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-contacts",
-  "version": "3.0.2-dev",
+  "name": "@zenput/cordova-plugin-contacts",
+  "version": "3.0.2-dev-zp1",
   "description": "Cordova Contacts Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
